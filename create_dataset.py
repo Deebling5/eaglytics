@@ -4,7 +4,7 @@ from google.cloud import bigquery
 client = bigquery.Client()
 
 # TODO(developer): Set table_id to the ID of the table to create.
-table_id = "eaglytics-340010.Assessment.assess1"
+table_id = "eaglytics-340010.Assessment.assessment"
 
 job_config = bigquery.LoadJobConfig(
     #schema=[
@@ -14,7 +14,7 @@ job_config = bigquery.LoadJobConfig(
     autodetect=True,
     source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
 )
-uri = "gs://eaglytics_assessment_abhijay/data_orders1"
+uri = "gs://eaglytics_assessment_abhijay/data_orders"
 
 load_job = client.load_table_from_uri(
     uri,

@@ -25,6 +25,6 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
 
 bucket_name = 'eaglytics_assessment_abhijay'
 source_file_name = r'C:\Users\91801\OneDrive\Desktop\Testing\orders.json'
-destination_blob_name = 'data_orders1'
+destination_blob_name = 'data_orders'
 
 upload_blob(bucket_name, source_file_name, destination_blob_name)
